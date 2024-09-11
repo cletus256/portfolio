@@ -10,13 +10,24 @@
     <section id="header">
         <div class="container">
             <nav>
-                <img src="Images/circle-m6.png" alt="" class="logo">
-                <ul>
+                
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <img src="Images/circle-m6.png" alt="" class="logo">
                     <li><a href="#">Home <span></span></a></li>
                     <li><a href="#about">About <span></span></a></li>
                     <li><a href="#container">Services <span></span></a></li>
                     <li><a href="#Work">Portfolio <span></span></a></li>
                     <li><a href="#Form">Contact <span></span></a></li>
+                </ul>
+                <img src="Images/circle-m6.png" alt="" class="logo">
+                <ul>
+                    <li class="hideOnMobile"><a href="#">Home <span></span></a></li>
+                    <li class="hideOnMobile"><a href="#about">About <span></span></a></li>
+                    <li class="hideOnMobile"><a href="#container">Services <span></span></a></li>
+                    <li class="hideOnMobile"><a href="#Work">Portfolio <span></span></a></li>
+                    <li class="hideOnMobile"><a href="#Form">Contact <span></span></a></li>
+                    <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -174,6 +185,16 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display ="flex";
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display ="none";
         }
 
     </script>

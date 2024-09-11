@@ -116,6 +116,36 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
+
+/* -----side bar----- */
+.menu-btn{
+    display: none;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    color: #020202;
+    background-color: #0000004f;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur 10px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%; 
+}
+
+
 /* ---------About me-------- */
 
 #about{
@@ -280,7 +310,6 @@ nav ul li a:hover::after{
 #Work button{
     display: inline-block;
     justify-content: center;
-    margin-left: 450px;
     align-items: center;
     background: #000000;
     color: #ffffff;
@@ -432,4 +461,25 @@ nav ul li a:hover::after{
     color: #61b752;
     padding-top: -10px;
     display: block;
+  }
+
+   /* ------------Tablet screen---------- */
+  @media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-btn{
+        display: flex;
+    }
+    /* ---work section */
+    #Work button{
+        display: block;
+    }
+  }
+
+  /* ------------phone screen---------- */
+  @media(max-width:400px){
+    .hideOnMobile{
+        width: 100%;
+    }
   }
