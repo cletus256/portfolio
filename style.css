@@ -478,13 +478,13 @@ nav ul li a:hover::after{
     }
      /* services */
     #container{
-        padding: 20px;
+        padding: 50px;
         padding-top: 50px;
     }
 
     /* services */
     #Work{
-        padding: 20px;
+        padding: 50px;
         padding-top: 20px;
     }
 
