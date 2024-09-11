@@ -129,7 +129,7 @@ nav ul li a:hover::after{
     width: 250px;
     z-index: 999;
     color: #020202;
-    background-color: #0000004f;
+    background-color: #0000008e;
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     backdrop-filter: blur 10px;
     display: none;
@@ -168,6 +168,7 @@ nav ul li a:hover::after{
 
 .about-col1 img{
     width: 100%;
+    object-fit: contain;
     border-radius: 15px;
 }
 
@@ -475,6 +476,33 @@ nav ul li a:hover::after{
     #Work button{
         display: block;
     }
+     /* services */
+    #container{
+        padding: 20px;
+        padding-top: 50px;
+    }
+
+    /* services */
+    #Work{
+        padding: 20px;
+        padding-top: 20px;
+    }
+
+    .SignUp{
+        display: block;
+        margin: 10px;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .left-col{
+        padding: 10px;
+    }
+    /* about me */
+    .about-col1 {
+        flex-basis: 100%;
+    }
+
   }
 
   /* ------------phone screen---------- */
