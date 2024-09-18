@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>Document</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -108,7 +110,7 @@
      </section>
 
         <!-- My work -->
-        <section id="Work">
+        <!-- <section id="Work">
             <h1 class="min-title">My Work</h1>
             <div class="work-list">
                <div class="list">
@@ -145,7 +147,58 @@
                  </div>
             </div>
             <button>See more</button>
-         </section>
+         </section> -->
+         <div class="container swiper">
+            <h1 class="min-title">My Work</h1>
+            <div class="card-wrapper ">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link swiper-slide">
+                            <img src="Images/proj 2.png" alt="" class="card-image">
+                            <p class="badge">TwistUg</p>
+                            <h2 class="card-title">Twist logistics website making Quotes online</h2>
+                            <button class="card-button"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5372F0"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></button>
+                        </a> 
+                    </li>    
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link swiper-slide">
+                            <img src="Images/proj-1.png" alt="" class="card-image">
+                            <p class="badge">Fashion</p>
+                            <h2 class="card-title">A fashion ecommerce  website for making orders and purchases.</h2>
+                            <button class="card-button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5372F0"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></button>
+                        </a> 
+                    </li>  
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link swiper-slide">
+                            <img src="Images/proj 3.png" alt="" class="card-image">
+                            <p class="badge">News search</p>
+                            <h2 class="card-title">News website that to search all topics in latest news.</h2>
+                            <button class="card-button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5372F0"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></button>
+                        </a> 
+                    </li>  
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link swiper-slide">
+                            <img src="Images/proj 3.png" alt="" class="card-image">
+                            <p class="badge">TwistUg</p>
+                            <h2 class="card-title">Twist logistics website making Quotes online</h2>
+                            <button class="card-button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5372F0"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></button>
+                        </a> 
+                    </li>  
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link swiper-slide">
+                            <img src="Images/proj-1.png" alt="" class="card-image">
+                            <p class="badge">TwistUg</p>
+                            <h2 class="card-title">Twist logistics website making Quotes online</h2>
+                            <button class="card-button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5372F0"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></button>
+                        </a> 
+                    </li>  
+                </ul>
+    
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
 
          <section class="SignUp" id="Form">
             <div class="left-col">
@@ -171,7 +224,8 @@
             </div>
          </section>
 
-    <script>
+
+    <!-- <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -197,6 +251,40 @@
             sidebar.style.display ="none";
         }
 
-    </script>
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>   
+    <script>
+                new Swiper('.card-wrapper', {
+            loop: true,
+            spaceBetween: 30,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints:{
+                0:{
+                    slidesPerView:1
+                },
+                768:{
+                    slidesPerView:2
+                },
+                1024:{
+                    slidesPerView:3
+                }
+            }
+
+            }); 
+    </script>                   
 </body>
 </html>

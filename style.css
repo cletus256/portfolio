@@ -278,7 +278,7 @@ nav ul li a:hover::after{
 
 /* ------Work----- */
 
-#Work{
+/* #Work{
     padding: 120px;
     padding-top: 20px;
 }
@@ -346,16 +346,113 @@ nav ul li a:hover::after{
 
 .Layer h1{
     margin-bottom: 10px;
-}
+} */
 
 /* .list:hover img{
     transform: scale(1.1);
 } */
 
-.list:hover .Layer{
+/* .list:hover .Layer{
     height: 75%;
+} */
+
+
+/* -----New work----- */
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 10px 10px;
+    overflow: hidden;
 }
 
+.min-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    /* width: 400px; */
+    display: block;
+    padding: 18px;
+    border-radius: 12px;
+    background-color: #262626;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.03);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #ff004f;
+}
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #ff004f;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title{
+    font-size: 18px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    border-radius: 50%;
+    margin: 10px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #ff004f;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link .card-button:hover{
+    color: #fff;
+    background: #ff004f;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #ff004f;
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+    background: #ff004f;
+}
+
+.card-wrapper .swiper-slide-button{
+    color: #ff004f;
+    margin-top: -35px;
+}
 
 /* ------contact form--------- */
 .SignUp{
@@ -502,6 +599,12 @@ nav ul li a:hover::after{
     .about-col1 {
         flex-basis: 100%;
     }
+    .card-wrapper{
+        margin: 0 10px 25px;
+    }
+    .swiper-slide-button{
+        display: none;
+    }  
 
   }
 
