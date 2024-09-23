@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="support.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <nav>
+                
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <img src="Images/circle-m6.png" alt="" class="logo">
+                    <li><a href="index.html">Home <span></span></a></li>
+                    <li><a href="index.html">About <span></span></a></li>
+                    <li><a href="index.html">Services <span></span></a></li>
+                    <li><a href="index.html">Portfolio <span></span></a></li>
+                    <li><a href="index.html">Contact <span></span></a></li>
+                </ul>
+                <img src="Images/circle-m6.png" alt="" class="logo">
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home <span></span></a></li>
+                    <li class="hideOnMobile"><a href="index.html">About <span></span></a></li>
+                    <li class="hideOnMobile"><a href="index.html">Services <span></span></a></li>
+                    <li class="hideOnMobile"><a href="index.html">Portfolio <span></span></a></li>
+                    <li class="hideOnMobile"><a href="index.html">Contact <span></span></a></li>
+                    <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p><span>IT</span> Support</p>
+                <h1>Reliable and efficient IT support services designed to keep your technology running smoothly. From hardware and software issues to network setup and security, I've got you covered..</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="container">
+        <h1 class="sub-title">Key Services</h1>
+        <div class="services-list">
+            <div>
+                <img src="Images/codepen-logo-132.png" alt="">
+                <h2>Hardware Installation and Repair</h2>
+                <p> Setting up, configuring, and troubleshooting computer hardware.
+                </p>
+            </div>
+            <div>
+                <img src="Images/microsoft-logo-132.png" alt="">
+                <h2>Software Installation and Configuration</h2>
+                <p>Installing, updating, and optimizing software applications.</p>
+            </div>
+            <div>
+                <img src="Images/hdd-solid-132.png" alt="">
+                <h2>Network Setup and Maintenance</h2>
+                <p>Designing, implementing, and managing network infrastructure.
+                </p>
+            </div>
+            <div>
+                <img src="Images/virus-block-solid-132.png" alt="">
+                <h2>Virus Removal and Malware Protection</h2>
+                <p>Identifying and removing malware, implementing security measures.</p>
+            </div>
+            <div>
+                <img src="Images/cloud-upload-regular-132.png" alt="">
+                <h2>Data Backup and Recovery</h2>
+                <p>Developing backup strategies and recovering data in case of loss.</p>
+            </div>
+            <div>
+                <img src="Images/calendar-heart-regular-132.png" alt="">
+                <h2>Troubleshooting and Diagnostic Services</h2>
+                <p>Resolving technical issues through systematic problem-solving.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="SignUp" id="Form">
+        <div class="left-col">
+            <h1>Contact Me</h1>
+            <p> <img src="Images/circle-phone.png" alt="">cletusmug@gmail.com</p>
+            <p><img src="Images/whatsapp-16.png" alt="">+256771882669</p>
+            <div class="socials">
+                <a href="#"><img src="Images/meta.png" alt=""></a>
+                <a href="#"><img src="Images/twitter-alt-circle.png" alt=""></a>
+                <a href="#"><img src="Images/instagram-16.png" alt=""></a>
+                <a href="#"><img src="Images/linkedin-16.png" alt=""></a>
+            </div>
+            <a href="CV.pdf" class="btn" download="btn btn--download">Download CV</a>
+        </div>
+    </section>
+
+    <script src="scripts.js">
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+            function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display ="flex";
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display ="none";
+        }
+    </script>
+</body>
+</html>

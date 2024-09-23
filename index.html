@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>Document</title>
-
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="header">
+    <section id="header" class="header">
         <div class="container">
             <nav>
                 
                 <ul class="sidebar">
                     <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <img src="Images/circle-m6.png" alt="" class="logo">
-                    <li><a href="#">Home <span></span></a></li>
+                    <li><a href="index.html">Home <span></span></a></li>
                     <li><a href="#about">About <span></span></a></li>
                     <li><a href="#container">Services <span></span></a></li>
                     <li><a href="#Work">Portfolio <span></span></a></li>
@@ -48,9 +48,8 @@
                 </div>
                 <div class="about-col2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                         Veritatis voluptate exercitationem pariatur qui! Ullam voluptate
-                          ipsam officiis tempora unde corporis, explicabo itaque delectus recusandae qui magnam amet molestias! Est, animi?</p>
+                    <p>Highly motivated and detail-oriented tech enthusiast with expertise in frontend development, IT support, graphics design, and 3D modeling. Proficient in creating innovative solutions and delivering exceptional results.
+                    </p>
 
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
@@ -90,20 +89,22 @@
            <div>
                 <img src="Images/message-code.png" alt="">
                 <h2>Web Development</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, veniam magnam. Quas, veniam delectus! Reprehenderit, autem vel.</p>
-                <a href="#">Learn more</a>
+                <p>Expert Web development services focused on crafting responsive, user-friendly, and visually stunning web applications. I specialize in building custom web solutions using modern technologies.
+                </p>
+                <a href="web.html">Learn more</a>
            </div>
            <div>
                 <img src="Images/features.png" alt="">
-                <h2>Copy Writing</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, veniam magnam. Quas, veniam delectus! Reprehenderit, autem vel.</p>
-                <a href="#">Learn more</a>
+                <h2>Graphics Design</h2>
+                <p>Creative graphics design services tailored to enhance your brand's visual identity. From logos to marketing materials, I craft engaging designs that capture your audience's attention.</p>
+                <a href="graphics.html">Learn more</a>
             </div>
             <div>
                 <img src="Images/heart-partner-handshake.png" alt="">
                 <h2>IT support</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, veniam magnam. Quas, veniam delectus! Reprehenderit, autem vel.</p>
-                <a href="#">Learn more</a>
+                <p>Reliable and efficient IT support services designed to keep your technology running smoothly. From hardware and software issues to network setup and security, I've got you covered.
+                </p>
+                <a href="support.html">Learn more</a>
              </div>
 
         </div>
@@ -148,7 +149,7 @@
             </div>
             <button>See more</button>
          </section> -->
-         <div class="container swiper">
+         <div class="container swiper" id="Work">
             <h1 class="min-title">My Work</h1>
             <div class="card-wrapper ">
                 <ul class="card-list swiper-wrapper">
