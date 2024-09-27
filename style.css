@@ -200,7 +200,7 @@ nav ul li a:hover::after{
     height: 3px;
     background: #ff004f;
     position: absolute;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: -40px;
     top: 0;
     bottom: -8px;
@@ -263,7 +263,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div a{
-    color: #ffffff;
+    color: #b54769;
     text-decoration: none;
     padding-top: 10px;
     cursor: pointer;
@@ -277,11 +277,12 @@ nav ul li a:hover::after{
 .services-list div:hover{
     background: #ff004f;
     transform: scale(1.15);
+    color: #ffffff;
 }
 
 .services-list div a:hover{
     text-decoration: underline;
-    color: #fff;
+    color: #ffffff;
 }
 
 /* ------Work----- */
